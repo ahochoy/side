@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-controller="SideCtrl">
+<div class="md-modal md-effect-12" id="modal-12">
+	<div class="md-content">
+		<h1 id="title">SIDEeye</h1>
+		<table class="table table-condensed">
+			<tr><th>Totals</th><th>Amount</th>
+			</tr>
+			<tr>
+				<td>Income</td><td>{{sum('income') | currency}}</td>
+			</tr>
+			<tr>
+				<td>Expenses</td><td>{{sum('expenses') | currency}}</td>
+			</tr>
+			<tr>
+				<td>Debts</td><td>{{sum('debts') | currency}}</td>
+			</tr>
+			<tr>
+				<td>Savings</td><td>{{sum('savings') | currency}}</td>
+			</tr>
+			<tr><td></td><td></td></tr>
+			<tr>
+				<td>Incoming</td><td>{{sum('income') | currency}}</td>
+			</tr>
+			<tr>
+				<td>Outgoing</td><td>({{sumOutgoing() | currency}})</td>
+			</tr>
+			<tr ng-class="{danger: amIBroke()}">
+				<th>Leftover</th><td>{{sumRemaining() | currency}}</td>
+			</tr>
+		</table>
+		<button class="md-close">Close <span class="glyphicon glyphicon-remove-circle"></span></button>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-sm-offset-1">
+			<h1 id="title">SIDEeye</h1>
+			<h2 id="subtitle">A Simple Approach to Personal Finance <br/><small>Savings, Income, Debts and Expenses</small></h2>
+			<p class="about-text">You suck at money management. Well, unless you don't. But if you're like most millenials, you probably do. Personal finance is just one of those things that young people have a hard time mastering.</p><p>From our parents to countless books like "Rags To Riches", "Zombie Finance", and "Rich Dad, Poor Dad" - there's a plethora of tools that try to help tame the wily ways of our spending and saving habits. But, they don't often stick.</p><p>While this tool won't put money in your pocket, it can help you get a high level understanding of where your money should be going.</p><p>You have income and then everything else...Expenses, are the usual suspects - rent, cell phone bill, groceries, etc. Debts are things like credit cards and student loans. Savings represent your monthly contribution to an Emergency Fund, 401k, or Investment account.</p>
+			<p>Plug in some numbers, gain some perspective and have some fun.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10 col-sm-offset-1">
+			<div class="finance-input"></div>
+			<form class="add-line" ng-submit="add()">
+				<small>Select and input your values:</small><br />
+				<input type="radio" ng-model="arr" name="arr_type" value="income" required> Income
+				<input type="radio" ng-model="arr" name="arr_type" value="expenses" required> Expense
+				<input type="radio" ng-model="arr" name="arr_type" value="debts" required> Debt
+				<input type="radio" ng-model="arr" name="arr_type" value="savings" required> Savings <br/>
+				<div class="spacer"></div>
+				<input class="desc" type="text" ng-model="desc" placeholder="Description" required>
+				<input class="amount" type="number" ng-model="amt" min="0" placeholder="Amount" required>
+				<button class="add-button btn btn-success" type="submit" value="Submit"><span class="glyphicon glyphicon-plus"></span></button>
+			</form>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Income</h3>
+					<ul class="list-unstyled">
+						<li ng-repeat="i in income">
+							{{i.description}} <span class="text-muted">{{i.amount | currency}}</span>
+							<span ng-click="delete('income', $index)" class="glyphicon glyphicon-trash"></span>
+						</li>
+					</ul>
+					<h3>Expenses</h3>
+					<ul class="list-unstyled">
+						<li ng-repeat="e in expenses">
+							<span>{{e.description}}</span> <span class="text-muted">{{e.amount | currency}}</span>
+							<span ng-click="delete('expenses', $index)" class="glyphicon glyphicon-trash"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<h3>Savings</h3>
+					<ul class="list-unstyled">
+						<li ng-repeat="s in savings">
+							<span>{{s.description}}</span> <span class="text-muted">{{s.amount | currency}}</span>
+							<span ng-click="delete('savings', $index)" class="glyphicon glyphicon-trash"></span>
+						</li>
+					</ul>
+					<h3>Debts</h3>
+					<ul class="list-unstyled">
+						<li ng-repeat="d in debts">
+							<span>{{d.description}}</span> <span class="text-muted">{{d.amount | currency}}</span>
+							<span ng-click="delete('debts', $index)" class="glyphicon glyphicon-trash"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="spacer"></div>
+			<button class="md-trigger btn btn-default" data-modal="modal-12"><span class="glyphicon glyphicon-list-alt"></span> Generate Finance Sheet</button>
+			<div class="visible-xs spacer"></div>
+			<button type="button" class="btn btn-danger" ng-click="clearData()">Clear Data</button>
+		</div>
+	</div>
+</div>
+<div class="md-overlay"></div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+<script type="text/javascript" src="js/side.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+
+<!-- for the blur effect -->
+<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+<script>
+	// this is important for IEs
+	var polyfilter_scriptpath = '/js/';
+</script>
+<script src="js/cssParser.js"></script>
+<script src="js/css-filters-polyfill.js"></script>
+</body>
+</html>

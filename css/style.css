@@ -1,0 +1,58 @@
+body {
+	background: url('geometry.png');
+}
+#title {
+	font-size: 450%;
+	letter-spacing: -2px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.add-line .desc {
+	border: none;
+	border: 1px dashed #5cb85c;
+	padding: 2%;
+	width: 50%;
+	margin: 5px 0;
+}
+
+.add-line .amount {
+	border: none;
+	border: 1px dashed #5cb85c;
+	padding: 2%;
+	width: 30%;
+}
+
+.add-line input:focus {
+	background: #e5f4e5;
+	color: black;
+	outline:none;
+}
+
+.container {
+	margin-bottom: 50px;
+	background: white;
+	padding: 2.5%;
+	border-top: 10px solid #5cb85c;
+}
+
+.add-button {
+	padding: 2%;
+	margin-left: 10px;
+}
+
+.finance-input {
+	border-top: 1px dashed lightgray;
+	margin: 20px 0 25px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.spacer {
+	width: 100%;
+	height: 15px;
+}
