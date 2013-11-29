@@ -120,10 +120,10 @@ h3 {
 .panel-background {
   left: 0;
   z-index: 100;
-  width: 30%;
+  width: 28%;
   color: white;
   background: url(../images/maze_emerald.png);
-  padding: 2.5% 60px 2.5%;
+  padding: 2.5% 75px 2.5% 65px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\0000310}}
 .panel-background #site-title {
@@ -148,7 +148,7 @@ h3 {
 .panel-background #site-about p {
   margin: 1em 0;
 }
-@media (max-width: 960px) {
+@media (max-width: 980px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\000031}}
   .panel-background {
     width: 35%;
@@ -246,7 +246,7 @@ h3 {
   float: right;
   color: #cfcfcf;
 }
-@media (max-width: 960px) {
+@media (max-width: 980px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\000031}}
   .panel-main {
     left: 40%;
@@ -292,7 +292,7 @@ h3 {
 .panel-sum table .danger {
   background: url(../images/maze_pink.png) !important;
 }
-@media (max-width: 960px) {
+@media (max-width: 980px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-sum\.sass}line{font-family:\000031}}
   .panel-sum {
     right: -23%;
