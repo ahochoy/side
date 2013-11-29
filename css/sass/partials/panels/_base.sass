@@ -13,7 +13,18 @@
 	background: white 
 	height: 95%
 	padding: 2.5%
+	min-height: 900px
 
+	@include breakpoint(narrow)
+
+	@include breakpoint(single)
+		position: relative
+		top: auto
+		height: auto
+		padding: 2.5% !important
+		width: 95%
+		min-height: inherit
+		
 /* Panel-Specific Styles
  *	1. Background
  *	2. Main
