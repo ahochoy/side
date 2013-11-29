@@ -1,8 +1,8 @@
 @mixin breakpoint($point)
 	@if $point == narrow
-		@media (max-width: 1000px)
+		@media (max-width: 960px)
 			@content
 
 	@else if $point == single
-		@media (max-width: 750px)
+		@media (max-width: 768px)
 			@content

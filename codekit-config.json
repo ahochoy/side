@@ -24,14 +24,17 @@
       "initialSize" : 600,
       "fileType" : 8192
     },
-    "\/index.html" : {
+    "\/css\/sass\/partials\/_active.sass" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/css\/sass\/partials\/_active.sass",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/sass\/_active.css",
+      "fileType" : 2,
+      "debugStyle" : 0
     },
     "\/css\/style.css" : {
       "ignoreWasSetByUser" : 0,
@@ -65,15 +68,15 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/css\/sass\/partials\/panels\/_panel-background.sass" : {
+    "\/css\/sass\/partials\/_inputs.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/sass\/partials\/panels\/_panel-background.sass",
+      "inputAbbreviatedPath" : "\/css\/sass\/partials\/_inputs.sass",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/sass\/partials\/_panel-background.css",
+      "outputAbbreviatedPath" : "\/css\/sass\/_inputs.css",
       "fileType" : 2,
       "debugStyle" : 0
     },
@@ -89,29 +92,26 @@
       "fileType" : 2,
       "debugStyle" : 2
     },
-    "\/css\/sass\/partials\/_inputs.sass" : {
+    "\/css\/sass\/partials\/panels\/_panel-background.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/sass\/partials\/_inputs.sass",
+      "inputAbbreviatedPath" : "\/css\/sass\/partials\/panels\/_panel-background.sass",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/sass\/_inputs.css",
+      "outputAbbreviatedPath" : "\/css\/sass\/partials\/_panel-background.css",
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/css\/sass\/modules\/_typography.sass" : {
+    "\/index.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/sass\/modules\/_typography.sass",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/sass\/_typography.css",
-      "fileType" : 2,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/css\/sass\/modules\/_variables.sass" : {
       "ignoreWasSetByUser" : 0,
@@ -137,15 +137,15 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/css\/sass\/partials\/_active.sass" : {
+    "\/css\/sass\/modules\/_typography.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/sass\/partials\/_active.sass",
+      "inputAbbreviatedPath" : "\/css\/sass\/modules\/_typography.sass",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/sass\/_active.css",
+      "outputAbbreviatedPath" : "\/css\/sass\/_typography.css",
       "fileType" : 2,
       "debugStyle" : 0
     },
@@ -161,6 +161,17 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
+    "\/js\/side-sf.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/side-sf.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 2,
+      "outputAbbreviatedPath" : "\/js\/side-sf-sf.js",
+      "fileType" : 64
+    },
     "\/css\/sass\/partials\/panels\/_panel-main.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -173,18 +184,6 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/css\/sass\/modules\/_enabled.sass" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/sass\/modules\/_enabled.sass",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/sass\/_enabled.css",
-      "fileType" : 2,
-      "debugStyle" : 0
-    },
     "\/css\/sass\/modules\/_functions.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -194,6 +193,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/sass\/_functions.css",
+      "fileType" : 2,
+      "debugStyle" : 0
+    },
+    "\/css\/sass\/modules\/_enabled.sass" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/sass\/modules\/_enabled.sass",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/sass\/_enabled.css",
       "fileType" : 2,
       "debugStyle" : 0
     },
