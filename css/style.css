@@ -1,58 +1,309 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,300,200,600,500,700,800,900);
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_reset\.sass}line{font-family:\000035}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_reset\.sass}line{font-family:\0000326}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_reset\.sass}line{font-family:\0000330}}
 body {
-	background: url('geometry.png');
-}
-#title {
-	font-size: 450%;
-	letter-spacing: -2px;
-	font-style: italic;
-	font-weight: bold;
+  line-height: 1;
 }
 
-.add-line .desc {
-	border: none;
-	border: 1px dashed #5cb85c;
-	padding: 2%;
-	width: 50%;
-	margin: 5px 0;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_reset\.sass}line{font-family:\0000333}}
+ol, ul {
+  list-style: none;
 }
 
-.add-line .amount {
-	border: none;
-	border: 1px dashed #5cb85c;
-	padding: 2%;
-	width: 30%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_reset\.sass}line{font-family:\0000336}}
+blockquote, q {
+  quotes: none;
 }
 
-.add-line input:focus {
-	background: #e5f4e5;
-	color: black;
-	outline:none;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_reset\.sass}line{font-family:\0000339}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
 }
 
-.container {
-	margin-bottom: 50px;
-	background: white;
-	padding: 2.5%;
-	border-top: 10px solid #5cb85c;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_reset\.sass}line{font-family:\0000344}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.add-button {
-	padding: 2%;
-	margin-left: 10px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_typography\.sass}line{font-family:\000034}}
+body {
+  font-family: "Raleway", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  color: #0c0c38;
+  line-height: 1.25;
 }
 
-.finance-input {
-	border-top: 1px dashed lightgray;
-	margin: 20px 0 25px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_typography\.sass}line{font-family:\0000312}}
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_typography\.sass}line{font-family:\0000316}}
+h1 {
+  font-size: 1.5em;
+  padding: 1.45833em 0;
 }
 
-.spacer {
-	width: 100%;
-	height: 15px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_typography\.sass}line{font-family:\0000320}}
+h2 {
+  font-size: 1.33333em;
+  padding: 1.25em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/modules\/_typography\.sass}line{font-family:\0000324}}
+h3 {
+  font-size: 1.16667em;
+  padding: 1.51786em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_base\.sass}line{font-family:\000031}}
+#panel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_base\.sass}line{font-family:\0000310}}
+.panel {
+  position: absolute;
+  top: 0;
+  background: white;
+  height: 95%;
+  padding: 2.5%;
+}
+
+/* Panel-Specific Styles
+ *	1. Background
+ *	2. Main
+ *	3. Sum
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\000031}}
+.panel-background {
+  left: 0;
+  z-index: 100;
+  width: 30%;
+  color: white;
+  background: url(../images/maze_emerald.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\000039}}
+.panel-background #site-title {
+  font-size: 457%;
+  font-weight: 200;
+  padding: 0 0 10%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\0000314}}
+.panel-background #site-subtitle {
+  font-weight: 100;
+  font-size: 250%;
+  line-height: 105%;
+  letter-spacing: -1px;
+  color: whitesmoke;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\0000321}}
+.panel-background #site-about {
+  font-weight: 100;
+  line-height: 164%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\0000325}}
+.panel-background #site-about p {
+  margin: 1em 0;
+}
+@media (max-width: 1000px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\000031}}
+  .panel-background {
+    width: 35%;
+  }
+}
+@media (max-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\000031}}
+  .panel-background {
+    width: 95%;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\000031}}
+.panel-main {
+  left: 35%;
+  z-index: 200;
+  width: 30%;
+  box-shadow: -10px 0 32px rgba(0, 0, 0, 0.2);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\000039}}
+.panel-main .bucket {
+  display: inline-block;
+  padding: 2%;
+  background: #0c0c38;
+  color: whitesmoke;
+  margin: 7px 8px 7px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000316}}
+.panel-main .bucket:hover {
+  background: #0f0f45;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000319}}
+.panel-main .bucket label {
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000322}}
+.panel-main .del-cross {
+  color: lightgrey;
+  font-weight: 300;
+  font-size: 90%;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000328}}
+.panel-main .del-cross:hover {
+  color: #e34234;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000331}}
+.panel-main .clear-data {
+  margin: 50px 0;
+  color: #e34234;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000339}}
+.panel-main .clear-data:hover {
+  background: #e34234;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000343}}
+.panel-main input.desc, .panel-main input.amount {
+  border: none;
+  background: whitesmoke;
+  padding: 2.5%;
+  margin: 0 0 10px;
+  font-weight: 100;
+  color: #0c0c38;
+  border-bottom: 1px solid #cfcfcf;
+  font-size: 90%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000353}}
+.panel-main .spacer {
+  height: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000356}}
+.panel-main .add-button {
+  padding: 2.5%;
+  background: #e34234;
+  color: #fce9e7;
+  border: none;
+  border-bottom: 1px solid #b22519;
+  font-size: 90%;
+  font-weight: lighter;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000366}}
+.panel-main .book h3 {
+  border-bottom: 1px dotted rgba(0, 0, 24, 0.1);
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\0000372}}
+.panel-main .ledger .line-item .value {
+  float: right;
+  color: #cfcfcf;
+}
+@media (max-width: 1000px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\000031}}
+  .panel-main {
+    left: 40%;
+    width: 48%;
+  }
+}
+@media (max-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-main\.sass}line{font-family:\000031}}
+  .panel-main {
+    width: 95%;
+    left: 0;
+    top: 725px;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-sum\.sass}line{font-family:\000031}}
+.panel-sum {
+  right: 0;
+  z-index: 300;
+  width: 25%;
+  box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
+  background: whitesmoke;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-sum\.sass}line{font-family:\000038}}
+.panel-sum table {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-sum\.sass}line{font-family:\0000311}}
+.panel-sum table td, .panel-sum table th {
+  padding: 5%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-sum\.sass}line{font-family:\0000315}}
+.panel-sum table th {
+  text-align: left;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-sum\.sass}line{font-family:\0000320}}
+.panel-sum table tr.maze {
+  background: url(../images/maze_white.png);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-sum\.sass}line{font-family:\0000323}}
+.panel-sum table .danger {
+  background: url(../images/maze_pink.png) !important;
+}
+@media (max-width: 1000px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-sum\.sass}line{font-family:\000031}}
+  .panel-sum {
+    right: -23%;
+  }
+}
+@media (max-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-sum\.sass}line{font-family:\000031}}
+  .panel-sum {
+    width: 95%;
+    left: 0;
+    right: inherit;
+    top: 1625px;
+    height: auto;
+    padding-bottom: 100px;
+  }
 }

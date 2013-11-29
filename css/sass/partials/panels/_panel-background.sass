@@ -1,0 +1,32 @@
+.panel-background
+	left: 0
+	z-index: 100
+	width: 30%
+
+	color: white
+	background: url(../images/maze_emerald.png)
+
+	#site-title
+		font-size: 457%
+		font-weight: 200
+		padding: 0 0 10%
+
+	#site-subtitle
+		font-weight: 100
+		font-size: 250%
+		line-height: 105%
+		letter-spacing: -1px
+		color: whitesmoke
+
+	#site-about
+		font-weight: 100
+		line-height: 164%
+
+		p
+			margin: 1em 0
+
+	@include breakpoint(narrow)
+		width: 35%
+
+	@include breakpoint(single)
+		width: 95%

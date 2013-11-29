@@ -1,0 +1,83 @@
+.panel-main
+	left: 35%
+	z-index: 200
+	width: 30%
+
+	box-shadow: -10px 0 32px rgba(0,0,0,.2)
+
+
+	.bucket
+		display: inline-block
+		padding: 2%
+		background: $midnight
+		color: whitesmoke
+		margin: 7px 8px 7px 0
+
+		&:hover
+			background: lighten($midnight,3%)
+
+		label
+			font-weight: lighter
+
+	.del-cross
+		color: lightgray
+		font-weight: 300
+		font-size: 90%
+		cursor: pointer
+
+		&:hover
+			color: $vermilion
+
+	.clear-data
+		margin: 50px 0
+		color: $vermilion
+		font-weight: 100
+		text-transform: uppercase
+		display: inline-block
+		padding: 12px
+
+		&:hover
+			background: $vermilion
+			color: white
+
+	input.desc, input.amount
+		border: none
+		background: whitesmoke
+		padding: 2.5%
+		margin: 0 0 10px
+		font-weight: 100
+		color: $midnight
+		border-bottom: 1px solid darken(whitesmoke,15%)
+		font-size: 90%
+
+	.spacer
+		height: 10px
+
+	.add-button
+		padding: 2.5%
+		background: $vermilion
+		color: lighten($vermilion,40%)
+		border: none
+		border-bottom: 1px solid darken($vermilion,15%)
+		font-size: 90%
+		font-weight: lighter
+
+	.book
+		h3
+			border-bottom: 1px dotted rgba(0,0,24,.1)
+			padding-bottom: 3px
+			margin-bottom: 20px
+	.ledger
+		.line-item
+			.value
+				float: right
+				color: darken(whitesmoke,15%)
+
+	@include breakpoint(narrow)
+		left: 40%
+		width: 48%
+
+	@include breakpoint(single)
+		width: 95%
+		left: 0
+		top: 725px

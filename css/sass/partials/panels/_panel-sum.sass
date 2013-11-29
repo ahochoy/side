@@ -1,0 +1,37 @@
+.panel-sum
+	right: 0
+	z-index: 300
+	width: 25%
+	box-shadow: -10px 0 20px rgba(0,0,0,.1)
+	background: whitesmoke
+
+	table
+		width: 100%
+
+		td, th
+			padding: 5%
+			border-bottom: 1px solid rgba(0,0,0,.1)
+
+		th
+			text-align: left
+			font-weight: bold
+
+
+		tr.maze
+			background: url(../images/maze_white.png)
+
+		.danger
+			background: url(../images/maze_pink.png) !important
+
+
+	@include breakpoint(narrow)
+		right: -23%
+
+	@include breakpoint(single)
+		width: 95%
+		left: 0
+		right: inherit
+		top: 1625px
+
+		height: auto
+		padding-bottom: 100px
