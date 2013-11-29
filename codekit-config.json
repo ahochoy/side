@@ -24,6 +24,36 @@
       "initialSize" : 600,
       "fileType" : 8192
     },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/css\/sass\/partials\/panels\/_panel-background.sass" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/sass\/partials\/panels\/_panel-background.sass",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/sass\/partials\/_panel-background.css",
+      "fileType" : 2,
+      "debugStyle" : 0
+    },
     "\/css\/sass\/partials\/_active.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -36,35 +66,15 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/css\/style.css" : {
+    "\/css\/sass\/modules\/_typography.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/images\/maze_emerald.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/maze_emerald.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/maze_emerald.png",
-      "initialSize" : 1756,
-      "fileType" : 8192
-    },
-    "\/css\/sass\/partials\/panels\/_panel-sum.sass" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/sass\/partials\/panels\/_panel-sum.sass",
+      "inputAbbreviatedPath" : "\/css\/sass\/modules\/_typography.sass",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/sass\/partials\/_panel-sum.css",
+      "outputAbbreviatedPath" : "\/css\/sass\/_typography.css",
       "fileType" : 2,
       "debugStyle" : 0
     },
@@ -80,6 +90,17 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
+    "\/images\/maze_emerald.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/maze_emerald.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/maze_emerald.png",
+      "initialSize" : 1756,
+      "fileType" : 8192
+    },
     "\/css\/sass\/style.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -91,27 +112,6 @@
       "outputAbbreviatedPath" : "\/css\/style.css",
       "fileType" : 2,
       "debugStyle" : 2
-    },
-    "\/css\/sass\/partials\/panels\/_panel-background.sass" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/sass\/partials\/panels\/_panel-background.sass",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/sass\/partials\/_panel-background.css",
-      "fileType" : 2,
-      "debugStyle" : 0
-    },
-    "\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/css\/sass\/modules\/_variables.sass" : {
       "ignoreWasSetByUser" : 0,
@@ -137,17 +137,16 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/css\/sass\/modules\/_typography.sass" : {
+    "\/js\/side-sf.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/sass\/modules\/_typography.sass",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/sass\/_typography.css",
-      "fileType" : 2,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/js\/side-sf.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 2,
+      "outputAbbreviatedPath" : "\/js\/side-sf-sf.js",
+      "fileType" : 64
     },
     "\/css\/sass\/partials\/panels\/_base.sass" : {
       "ignoreWasSetByUser" : 0,
@@ -161,16 +160,17 @@
       "fileType" : 2,
       "debugStyle" : 0
     },
-    "\/js\/side-sf.js" : {
+    "\/css\/sass\/partials\/panels\/_panel-sum.sass" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/side-sf.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 2,
-      "outputAbbreviatedPath" : "\/js\/side-sf-sf.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/sass\/partials\/panels\/_panel-sum.sass",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/sass\/partials\/_panel-sum.css",
+      "fileType" : 2,
+      "debugStyle" : 0
     },
     "\/css\/sass\/partials\/panels\/_panel-main.sass" : {
       "ignoreWasSetByUser" : 0,

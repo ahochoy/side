@@ -123,7 +123,7 @@ h3 {
   width: 30%;
   color: white;
   background: url(../images/maze_emerald.png);
-  padding-left: 2.5% 75px 2.5%;
+  padding: 2.5% 60px 2.5%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/ahochoy\/Projects\/side_finance\/css\/sass\/partials\/panels\/_panel-background\.sass}line{font-family:\0000310}}
 .panel-background #site-title {
